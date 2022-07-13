@@ -1,6 +1,8 @@
 <div class="mt-4">
-  <form method="POST">
-    <div class="form-group mb-4">
+  <form method="POST" action="">
+    {{! method get: dữ liệu khi submit form sẽ đc đẩy lên URL và từ URL sẽ đẩy lên server (ở req.query) }}
+    {{! method post: dữ liệu khi submit form sẽ đẩy lên server rồi vào middleware để xủ lý rồi trả dữ liệu đã qua xử lý ở req.body }}
+    <div class="form-group mt-4">
       <input
         type="text"
         class="form-control"
